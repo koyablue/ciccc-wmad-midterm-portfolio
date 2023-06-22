@@ -1,0 +1,60 @@
+@import url("./index.css");
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2em;
+  padding: 1em 2em;
+
+  /* width: calc(100% - 5em);
+  position: fixed;
+  z-index: 1;
+  background-color: #fef0e4; */
+}
+
+.ghLogoWrapper {
+  width: 10%;
+}
+
+.ghLogoWrapper a:hover {
+  opacity: 0.7;
+}
+
+.navContainer {
+  display: flex;
+  gap: 5em;
+  width: 70%;
+}
+
+.navContainerItem {
+  cursor: pointer;
+}
+
+.navContainerItem a:hover{
+  opacity: 0.8;
+}
+
+.resumeButtonWrapper {
+  width: 10%;
+}
+
+.resumeButton {
+  border: 1px solid #333333;
+  background-color: #fef0e4;
+  box-shadow: 3px 3px 0px #333333;
+  padding: 0.5em;
+  width: 10em;
+  cursor: pointer;
+}
+
+.resumeButton:hover {
+  /* opacity: 0.6; */
+  box-shadow: 5px 5px 0px #333333;
+  transition-duration: 300ms;
+}
+
+.resumeButton:active {
+  box-shadow: none;
+  transition-duration: 300ms;
+}

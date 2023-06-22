@@ -1,0 +1,117 @@
+@import url("./index.css");
+@import url("./header.css");
+
+.main {
+  min-height: calc(100vh - 3em);
+  padding: 5em;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  width: 30%;
+  height: 26em;
+  border: 1px solid #333333;
+  border-radius: 0.25em;
+  padding: 0.75em 0.75em 2em 0.75em;
+  background-color: #ffffff;
+}
+
+.projectCardImgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  border: 1px solid #333333;
+  border-radius: 0.25em;
+}
+
+.projectCard img {
+  object-position: center;
+  object-fit: cover;
+}
+
+.projectCardDummy {
+  width: 30%;
+  height: 26em;
+  padding: 0.75em 0.75em 2em 0.75em;
+  border: 1px solid #fef0e4;
+}
+
+.projectTitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.projectTitle {
+  font-weight: bold;
+  font-size: 1.3em;
+  /* text-align: center; */
+}
+
+.projectTechStack {
+  font-weight: 600;
+}
+
+.projectCardButtonContainer {
+  display: flex;
+  margin-top: auto;
+  gap: 0.6em;
+}
+
+.projectCardButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4em;
+  width: fit-content;
+  height: 2em;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  /* padding: 1em; */
+  background-color: #ffffff;
+  box-shadow: 2px 2px 0 0 #333333;
+  cursor: pointer;
+}
+
+.projectCardButton:hover {
+  box-shadow: 4px 4px 0 0 #333333;
+  transition-duration: 300ms;
+}
+
+.projectCardButton:active {
+  box-shadow: none;
+  opacity: 0.6;
+  transition-duration: 300ms;
+}
+
+.projectCard .disabled {
+  background-color: #e4e7eb;
+  cursor: not-allowed;
+}
+
+.projectCard .disabled:hover {
+  box-shadow: 2px 2px 0 0 #333333;
+}
+
+.projectCard .disabled:active {
+  opacity: 1;
+}
+
+.projectCard .disabled a {
+  color: #6a7280;
+  cursor: not-allowed;
+}
