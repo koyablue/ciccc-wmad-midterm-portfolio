@@ -2,15 +2,10 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 2em;
-  padding: 1em 2em;
-
-  /* width: calc(100% - 5em);
-  position: fixed;
-  z-index: 1;
-  background-color: #fef0e4; */
+  padding: 2em 2em;
+  box-sizing:border-box
 }
 
 .ghLogoWrapper {
@@ -49,7 +44,6 @@
 }
 
 .resumeButton:hover {
-  /* opacity: 0.6; */
   box-shadow: 5px 5px 0px #333333;
   transition-duration: 300ms;
 }
